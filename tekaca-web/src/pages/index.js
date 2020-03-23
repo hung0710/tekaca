@@ -1,0 +1,14 @@
+import React, { Component } from "react"
+import Home from './trang-chu'
+class Index extends Component {
+
+    render() {
+        return (
+            <div>
+                <Home/>
+            </div>
+        )
+    }
+}
+
+export default Index;
