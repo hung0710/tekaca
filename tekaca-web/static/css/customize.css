@@ -1,0 +1,48 @@
+customize.css
+
+
+
+.icon-brand-js-square {
+	color: #f7df1e;
+}
+.icon-brand-node-js {
+	color: green;
+}
+.icon-brand-angular {
+	color:#dd0031;
+}
+.icon-brand-css3-alt {
+	color: blue;
+}
+.icon-brand-html5 {
+	color:#f0653f;
+}
+.icon-brand-react {
+	color:#67fcef;
+}
+.icon-brand-vuejs {
+	color: green;
+}
+.icon-brand-python {
+	color: #b1b172;
+}
+
+
+
+.drop-search {
+	top: -27px;
+	position: absolute; 
+	left: 24px;
+	fill: currentColor;
+	height: 24px;
+	pointer-events: none;
+	color: #f5f5f5;
+}
+
+
+
+
+
+
+
+
