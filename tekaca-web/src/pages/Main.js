@@ -43,7 +43,7 @@ const makeStore = (initialState, options) => {
     let store
     if (!options.isServer) {
         const persistConfig = {
-            key: 'root-tekway',
+            key: 'root-tekaca',
             storage,
             transforms: [encryptor]
         };
@@ -71,7 +71,7 @@ const makeStore = (initialState, options) => {
 class Main extends Component {
     getHeader = () => {
         return <NextSeo
-            title="Tekaca.vn - Địa điểm học, lập trình, thiết kế, tuyển dụng ở  đâu Hà Nội | TP.Hồ Chí Minh"
+            title="Tekaca.vn - Học lập trình, thiết kế dễ dàng"
             description={"Địa điểm học, lập trình, thiết kế, tuyển dụng ở  đâu Hà Nội | TP.Hồ Chí Minh." + this.props.router.asPath}
             canonical="https://www.canonical.ie/"
             openGraph={{
@@ -107,24 +107,20 @@ class Main extends Component {
         return (
             <div style={{ width: '100%', height: '100%' }}>
                 <Head>
-                    <title>TekAca</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-                    <script src="static/vendor/jquery/jquery.min.js"></script>
-                    <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-                    <script src="static/vendor/jquery-easing/jquery.easing.min.js"></script>
-                    <script src="static/js/bootstrap-select.js"></script>
-                    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossOrigin="anonymous"/>
-                    <link rel="stylesheet" href="/static/css/style.css" />
+                    <title>Tekaca.vn - Học lập trình, thiết kế dễ dàng</title>
+                    <meta charset="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="description" content="Tekaca.vn - Học lập trình, thiết kế dễ dàng" />
+
+                    <link href="/static/assets/images/favicon.png" rel="icon" type="image/png" />
+
+                    <link rel="stylesheet" href="/static/assets/css/style-rtl.css" />
+                    <link rel="stylesheet" href="/static/assets/css/night-mode.css" />
+                    <link rel="stylesheet" href="/static/assets/css/framework-rtl.css" />
+                    <link rel="stylesheet" href="/static/assets/css/bootstrap.css" />
                     <link rel="stylesheet" href="/static/css/customize.css" />
-                    <link rel="stylesheet" href="/static/css/responsive.css" />
-                    <link rel="stylesheet" href="/static/css/mega.menu.css" />
-                    <link rel="stylesheet" href="/static/css/bootstrap-select.css" />
-                    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
-                        integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
-                        crossOrigin="anonymous" />
-                    <link href="/static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"></link>
-                    
+
+                    <link rel="stylesheet" href="/static/assets/css/icons.css" />
                 </Head>
                 {this.getHeader()}
                 <PersistGate persistor={this.props.store.__PERSISTOR} loading={null}>
@@ -133,28 +129,26 @@ class Main extends Component {
                         <div className='app'>
                             {
                             this.props.router && this.props.router.asPath && this.props.router.asPath == "/account/login"
-                                || this.props.router && this.props.router.asPath && this.props.router.asPath == "/account/register"
                                 ?
                                 <div className='main-content'>
                                     {/* <Component {...pageProps} /> */}
                                     {this.props.body}
                                 </div> :
                             <>
-                                <Header />
-                                <div className='main-content'>
-                                    {
-                                        this.props.body
-                                    }
+                                <div id="wrapper" class="bg-white">
+                                    <Header />
+                                    <div className='main-content'>
+                                        {
+                                            this.props.body
+                                        }
+                                    </div>
+                                    <Footer />
                                 </div>
-                                <Footer />
                             </>
                             }
                         </div>
                     </Provider>
                 </PersistGate>
-                {/* <FacebookProvider appId="313919028686873" chatSupport>
-                    <CustomChat pageId="425898327604484" minimized={false} />
-                </FacebookProvider> */}
             </div >
         );
     }
