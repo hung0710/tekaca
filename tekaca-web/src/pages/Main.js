@@ -108,7 +108,7 @@ class Main extends Component {
             <div style={{ width: '100%', height: '100%' }}>
                 <Head>
                     <title>Tekaca.vn - Học lập trình, thiết kế dễ dàng</title>
-                    <meta charset="utf-8" />
+                    <meta charSet="utf-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="description" content="Tekaca.vn - Học lập trình, thiết kế dễ dàng" />
 

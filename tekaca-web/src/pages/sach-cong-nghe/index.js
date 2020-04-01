@@ -1,14 +1,15 @@
 import React, { Component, useEffect } from "react"
 
-import Dashboard from '@components/home/dashboard/Dashboard'
+import Books from '@components/home/books/Books'
 
-function Home(props){
+
+function TechBooks(props){
     return (
         <div className="content">
-           <Dashboard/>
+           <Books/>
         </div>
     )
 
 }
 
-export default Home
+export default TechBooks
