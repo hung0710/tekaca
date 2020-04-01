@@ -4,7 +4,6 @@ class Index extends Component {
 
     render() {
         return (
-            <!-- Wrapper -->
     		<div id="wrapper" class="bg-white">
                 <Home/>
             </div>

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-
+import Link from 'next/link';
 import LogoDark from '@images/logo-dark.svg';
 
 function Header(props) {
@@ -25,7 +25,7 @@ function Header(props) {
                         {/* Main Navigation */}
                         <nav id="navigation">
                             <ul id="responsive">
-                                <li><a href="#">Home</a> </li>
+                                <li><Link href="/"><a>Home</a></Link> </li>
                                 <li><a href="#">Explore</a>
                                     <ul className="dropdown-nav nav-large nav-courses">
                                         <li><a href="course-card.html#">
@@ -52,7 +52,7 @@ function Header(props) {
                                     </ul>
                                 </li>
                                 <li><a href="course-path.html" className="nav-active">Track</a> </li>
-                                <li><a href="book.html">Book</a> </li>
+                                <li><Link href="sach-cong-nghe"><a>Book</a></Link></li>
                                 <li><a href="blog-1.html">Blog</a> </li>
                                 <li><a href="#">Pages</a>
                                     <ul className="dropdown-nav">
