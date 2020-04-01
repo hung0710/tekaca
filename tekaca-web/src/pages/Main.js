@@ -112,13 +112,20 @@ class Main extends Component {
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <meta name="description" content="Tekaca.vn - Học lập trình, thiết kế dễ dàng" />
 
-                    <link href="/static/assets/images/favicon.png" rel="icon" type="image/png" />
+                    <script src="static/assets/js/framework.js"></script>
+                    <script src="static/assets/js/jquery-3.3.1.min.js"></script>
+                    <script src="static/assets/js/mmenu.min.js"></script>
+                    <script src="static/assets/js/simplebar.js"></script>
+                    <script src="static/assets/js/main.js"></script>
 
-                    <link rel="stylesheet" href="/static/assets/css/style-rtl.css" />
+
+                    <link href="/static/assets/images/favicon.png" rel="icon" type="image/png" />
+                    <link rel="stylesheet" href="static/assets/css/style.css"/>
+                    {/* <link rel="stylesheet" href="/static/assets/css/style-rtl.css" /> */}
                     <link rel="stylesheet" href="/static/assets/css/night-mode.css" />
-                    <link rel="stylesheet" href="/static/assets/css/framework-rtl.css" />
+                    <link rel="stylesheet" href="/static/assets/css/framework.css" />
                     <link rel="stylesheet" href="/static/assets/css/bootstrap.css" />
-                    <link rel="stylesheet" href="/static/css/customize.css" />
+                    {/* <link rel="stylesheet" href="/static/css/customize.css" /> */}
 
                     <link rel="stylesheet" href="/static/assets/css/icons.css" />
                 </Head>
@@ -135,7 +142,6 @@ class Main extends Component {
                                     {this.props.body}
                                 </div> :
                             <>
-                                <div id="wrapper" class="bg-white">
                                     <Header />
                                     <div className='main-content'>
                                         {
@@ -143,7 +149,6 @@ class Main extends Component {
                                         }
                                     </div>
                                     <Footer />
-                                </div>
                             </>
                             }
                         </div>
