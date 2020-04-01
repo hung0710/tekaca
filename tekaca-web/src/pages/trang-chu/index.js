@@ -1,9 +1,11 @@
 import React, { Component, useEffect } from "react"
 
+import Books from '@components/home/books/Books.js'
+
 function Home(props){
     return (
         <div className="content">
-            This is home page
+           <Books/>
         </div>
     )
 
